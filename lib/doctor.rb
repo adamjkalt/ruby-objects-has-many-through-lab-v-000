@@ -15,7 +15,6 @@ end
 def patients
     self.appointments.collect do |appointment|
       appointment.patient
-      self.add_appointment(appointment)
     end
 end
 
