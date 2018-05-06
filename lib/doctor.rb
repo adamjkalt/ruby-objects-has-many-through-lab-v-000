@@ -12,7 +12,7 @@ def add_appointment(appointment)
   appointment.doctor = self
 end
 
-def patients
+def patients(appointment)
     self.appointments.collect do |appointment|
       appointment.patient
     end
