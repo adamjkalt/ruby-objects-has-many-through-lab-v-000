@@ -14,8 +14,8 @@ def add_appointment(appointment)
 end
 
 def patients
-    self.appointments.collect do |time|
-      time.patient
+    self.appointments.collect do |appointment|
+      appointment.patient
     end
 end
 
